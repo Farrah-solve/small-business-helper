@@ -1,26 +1,36 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-// import React, { useState } from 'react';
 
-// function App() {
-//     email: '',
-//     password: '',
 
-// }
+import React, { useState } from 'react';
+import LoginForm from './components/LoginForm';
+
+    
 
 const MainPage = () => {
-
     return (
-        <div>
-            <h3>Welcome to Small Business Helper</h3>
-            <small>Login Page</small>
-            <div className='container'>
-                
 
-      </div>
-            <Link to='/budgets'>Budget Tracking</Link>
-        </div>
-    );
-};
+    function MainPage() {
+        const adminUser = {
+            email: '', 
+            password: ''
+        }
+    const [user, setUser] = useState({name:'', email:''});
+    const [error, setError] = useState('');
+    
+    const Login = details => {
+        console.log(details);
+    }
+
+    const Logout = () => {
+        console.log('Logout');
+    }
+
+    
+
+            
+            
+    
+            
+        
+ 
 
 export default MainPage;

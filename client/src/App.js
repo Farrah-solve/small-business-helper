@@ -22,15 +22,7 @@ class App extends Component {
     <Router>
       <div className='container'>
         
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <div className='collapse nav-collapse'>
-            <ul className='nav-bar mr-auto'>
-              <li className='navbar-item'>
-                <Link to='/' className='nav-link'>Small Business Helper</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        
 
       </div>
       <Switch>
