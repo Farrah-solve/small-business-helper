@@ -13,14 +13,5 @@ if (process.env.NODE_ENV === 'production') {
 
 require('.components/mainpage')(app);
 
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reactNotes');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Farrah:Lupita2514!@sbh-b.rhi3m.mongodb.net/sbh-b?retryWrites=true&w=majority');
 
-mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/business-helper',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    }
-  );
