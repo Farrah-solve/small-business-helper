@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 
 require('.components/mainpage')(app);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reactNotes');
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/reactNotes');
 
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost/business-helper',
